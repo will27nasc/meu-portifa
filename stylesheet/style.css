@@ -1,5 +1,6 @@
 :root {
-
+    --cor-light: #f8f9fa;
+    --cor-dark: #343a40;
     --corA: #41A35E;
     --corB: #2B1A3F;
     --corC: #78F09B;
@@ -17,14 +18,14 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: var();
-    background-color: azure;
+body {  
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     background: var(--corB) url('../img/capa.png') top center no-repeat;
     background-size: 100% 80%;
+    box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.396);
     width: 100%;
     height: 450px;
     opacity: 0.95;
@@ -51,7 +52,9 @@ header {
 }
 
 .logo h1 {
-    color: var(--corE)
+    color: var(--corE);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.265);
+    font-size: 1.8rem;
 }
 
 .socials ul li {
@@ -78,5 +81,73 @@ header {
     text-align: right;
     margin-right: 30px;
 }
+
+main {
+    background-color: var(--cor-light);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);   
+    padding: 30px 20px;
+}
+
+.sobre {
+    padding: 10px 20px;
+    background-color: var(--corD);
+    box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.396);  
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.sobre h2 {
+    font-size: 1.4rem;
+}
+
+.sobre p {
+    font-size: 0.9rem;
+}
+
+.soft-skills h2 {
+    font-size: 1.4rem;
+    color: var(--corB);
+    border-bottom: 1px solid var(--corA);
+    margin-bottom: 15px;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+}
+
+.box {
+    background-color: var(--corB);
+    box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.396);
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding: 8px 12px;
+}
+
+.box h3 {
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--corD);
+}
+
+#comunicacao,
+#flexivel,
+#equipe,
+#criatividade {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: var(--cor-light);
+    background-color: var(--corB);
+    text-align: justify;
+    height: 85px;
+    width: 100%;
+    display: none;
+}
+
+
+
+
+
 
 
