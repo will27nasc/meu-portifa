@@ -57,6 +57,12 @@ header {
     font-size: 1.8rem;
 }
 
+.socials {
+    text-align: right;
+    margin-right: 30px;
+    margin-top: -15px;
+}
+
 .socials ul li {
     list-style: none;
     line-height: 30px;
@@ -75,11 +81,6 @@ header {
     color: var(--corA);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.517);
     transition: 0.5s;
-}
-
-.socials {
-    text-align: right;
-    margin-right: 30px;
 }
 
 main {
@@ -104,17 +105,19 @@ main {
     font-size: 0.9rem;
 }
 
-.soft-skills h2 {
+.soft-skills h2,
+.hard-skills h2 {
     font-size: 1.4rem;
     color: var(--corB);
     border-bottom: 1px solid var(--corA);
     margin-bottom: 15px;
-}
+}   
 
 .habilidades {
     display: flex;
     flex-direction: column;
     max-width: 450px;
+    margin: 0 auto;
 }
 
 .box {
@@ -145,6 +148,119 @@ main {
     display: none;
 }
 
+.linguagens {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+.box-html,
+.box-css,
+.box-javascript,
+.box-git
+{
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.396);
+    margin: 20px auto; 
+    background-size: cover;
+    max-width: 640px;
+    width: 80%;
+    height: 360px;
+}
+
+.box-html {
+    background: url("../img/fundohtml.jpg") no-repeat;
+}
+
+.box-css {
+    background: url("../img/fundocss.jpg") no-repeat;
+}
+
+.box-javascript {
+    background: url("../img/fundojs.jpg") no-repeat;
+}
+
+.box-git {
+    background: url("../img/fundogit.jpg") no-repeat;
+}      
+
+.box-html > img,
+.box-css > img,
+.box-javascript > img,
+.box-git > img{
+    background-color: var(--cor-light);
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    z-index: 1;
+}
+
+.box-html h3,
+.box-css h3,
+.box-javascript h3,
+.box-git h3{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: var(--cor-dark);
+    color: var(--cor-light);
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    .logo {
+        top: 275px;
+    }
+
+    .logo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .socials {
+        margin-top: -80px;
+    }
+
+    .socials ul li {
+        line-height: 40px;
+    }
+    
+    .socials ul li i {
+        font-size: 40px; 
+    }
+    
+    .socials ul li i:hover {
+        transition: translate(-10px,-10px);
+        font-size: 45px;    
+    }
+
+    .box {
+        margin: 15px 10px;  
+        width: 260px;
+        text-align: center;
+    }
+
+    .soft-skills h2,
+    .hard-skills h2 {
+        font-size: 1.7rem;
+    }   
+
+    .habilidades {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 250px;
+        max-width: 100%;
+    }
+}
 
 
 
