@@ -241,6 +241,15 @@ main {
         font-size: 45px;    
     }
 
+    .habilidades {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 250px;
+        max-width: 100%;
+    }
+
     .box {
         margin: 15px 10px;  
         width: 260px;
@@ -251,15 +260,6 @@ main {
     .hard-skills h2 {
         font-size: 1.7rem;
     }   
-
-    .habilidades {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        height: 250px;
-        max-width: 100%;
-    }
 
     .linguagens {
         display: grid;
