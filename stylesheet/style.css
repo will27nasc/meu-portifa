@@ -20,10 +20,12 @@
 
 body {  
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
 }
 
 header {
     background: var(--corB) url('../img/capa.png') top center no-repeat;
+    background-attachment: fixed;
     background-size: 100% 80%;
     box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.396);
     width: 100%;
@@ -162,7 +164,7 @@ main {
     border-radius: 25px;
     position: relative;
     box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.396);
-    margin: 20px auto; 
+    margin: 25px auto; 
     background-size: cover;
     max-width: 640px;
     width: 80%;
@@ -209,6 +211,58 @@ main {
     color: var(--cor-light);
     text-align: center;
 }
+
+section.redes{
+    padding: 30px 5px;
+    overflow-x: hidden;
+    background-color: var(--corC);
+    box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.396);
+    border-radius: 15px;
+}
+
+section.redes h2{
+    margin: 18px 0;
+    text-align: center;
+    color: var(--corB);
+    border: 1px solid var(--corB);
+    background-color: var(--corA);
+}
+
+.telefone {
+    height: 544px;
+    width: 270px; 
+    margin: 0 auto;  
+    background: url('../img/frame-iphone.png');
+}
+
+iframe#tela {
+    position: relative;
+    top: 70px;
+    left: 20px;
+    width: 231px;
+    height: 408px;
+}
+
+.redes-sociais {
+    text-align: center;
+}
+
+.redes-sociais img {
+    width: 45px;
+    margin: 18px 5px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.401);
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.48);
+    width: 46px;
+    transform: translate(1px,1px);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.561);
+}
+
 
 @media screen and (min-width: 992px) {
     .logo {
@@ -264,28 +318,33 @@ main {
     .linguagens {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 30px;
-        grid-row-gap: 0;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 5px;
     }
 
     .box-html { 
         grid-area: 1 / 2 / 2 / 3; 
+        margin: 80px 0 0 0;
         width: 400px;
         height: 280px;
     }
     .box-css { 
         grid-area: 1 / 3 / 2 / 4; 
+        margin: 80px 0 0 0;
         width: 400px;
         height: 280px;
     }
     .box-javascript { 
-        grid-area: 2 / 2 / 3 / 3; 
+        grid-area: 2 / 3 / 3 / 4; 
+        margin-top: 0;
+        margin-bottom: 100px;
         width: 400px;
         height: 280px;
     }
     .box-git { 
-        grid-area: 2 / 3 / 3 / 4; 
+        grid-area: 2 / 2 / 3 / 3; 
+        margin-top: 0;
         width: 400px;
         height: 280px;
     }
