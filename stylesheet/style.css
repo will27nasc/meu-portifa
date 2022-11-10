@@ -244,15 +244,15 @@ main {
     .habilidades {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: flex-start;
-        height: 250px;
         max-width: 100%;
     }
 
     .box {
         margin: 15px 10px;  
-        width: 260px;
+        width: 460px;
         text-align: center;
     }
 
