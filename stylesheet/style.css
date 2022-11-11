@@ -1,3 +1,4 @@
+/*Início configurações padrão*/
 :root {
     --cor-light: #f8f9fa;
     --cor-dark: #343a40;
@@ -38,6 +39,34 @@ header {
     margin: 0 auto;
 }
 
+main {
+    background-color: var(--cor-light);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);   
+    padding: 30px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.title {
+    font-size: 1.4rem;
+    color: var(--corB);
+    border-bottom: 1px solid var(--corA);
+    margin-bottom: 15px;
+}   
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    height: 95px;
+    background-color: var(--corB);
+    line-height: 95px;
+    box-shadow: 2px -5px 6px rgba(43, 26, 63, 0.366);    
+    color: var(--cor-light);
+}
+/*Fim configurações padrão*/
+
+/*Início configurações header*/
+/* Início div logo */
 .logo {
     position: relative;
     top: 308px;
@@ -57,7 +86,8 @@ header {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.265);
     font-size: 1.8rem;
 }
-
+/* Fim div logo */
+/* Início div socials */
 .socials {
     text-align: right;
     margin-right: 30px;
@@ -83,15 +113,10 @@ header {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.517);
     transition: 0.5s;
 }
+/* Fim div socials */
+/*Fim configurações header*/
 
-main {
-    background-color: var(--cor-light);
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);   
-    padding: 30px 20px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
+/* Início configuração section sobre */
 .sobre {
     padding: 10px 20px;
     background-color: var(--corD);
@@ -107,14 +132,7 @@ main {
 .sobre p {
     font-size: 0.9rem;
 }
-
-.soft-skills h2,
-.hard-skills h2 {
-    font-size: 1.4rem;
-    color: var(--corB);
-    border-bottom: 1px solid var(--corA);
-    margin-bottom: 15px;
-}   
+/* Final configuração section sobre */
 
 .habilidades {
     display: flex;
@@ -156,7 +174,9 @@ main {
     width: 100%;
     display: none;
 }
+/* Fim configuração section soft-skills */
 
+/* Início configuração section hard-skills */
 .linguagens {
     display: flex;
     flex-direction: column;
@@ -218,7 +238,9 @@ main {
     color: var(--cor-light);
     text-align: center;
 }
+/* Fim configuração section hard-skills */
 
+/* Início configuração section redes */
 section.redes{
     padding: 30px 5px;
     overflow-x: hidden;
@@ -270,18 +292,10 @@ iframe#tela {
     transform: translate(1px,1px);
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.561);
 }
-
-footer {
-    text-align: center;
-    margin-top: 30px;
-    height: 95px;
-    background-color: var(--corB);
-    line-height: 95px;
-    box-shadow: 2px -5px 6px rgba(43, 26, 63, 0.366);    
-    color: var(--cor-light);
-}
+/* Fim configuração section redes */
 
 @media screen and (min-width: 992px) {
+    /* Início div logo */
     .logo {
         top: 275px;
     }
@@ -294,11 +308,13 @@ footer {
     .logo h1 {
         font-size: 2rem;
     }
+    /* Final div logo */
 
     .socials {
         margin-top: -110px;
     }
 
+    /* Início div socials */
     .socials ul li {
         line-height: 40px;
     }
@@ -311,7 +327,9 @@ footer {
         transition: translate(-10px,-10px);
         font-size: 45px;    
     }
+    /* Fim div socials */
 
+    /* Início section soft-skills */
     .habilidades {
         display: flex;
         flex-direction: row;
@@ -330,8 +348,10 @@ footer {
     .soft-skills h2,
     .hard-skills h2 {
         font-size: 1.7rem;
-    }   
+    } 
+    /* Fim section soft-skills */  
 
+    /* Início section hard-skills */
     .linguagens {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -365,10 +385,13 @@ footer {
         width: 400px;
         height: 280px;
     }
+    /* Fim section hard-skills */
 
+    /* Início section redes */
     section.redes h2{
         font-size: 3rem;
     }
+    /* Fim section redes */
 }
 
 
