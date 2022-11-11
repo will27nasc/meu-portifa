@@ -2,7 +2,7 @@
     --cor-light: #f8f9fa;
     --cor-dark: #343a40;
     --corA: #41A35E;
-    --corB: #2B1A3F;
+    --corB: #2b1a3f;
     --corC: #78F09B;
     --corD: #F0B460;
     --corE: #A37636;
@@ -88,6 +88,8 @@ main {
     background-color: var(--cor-light);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.4);   
     padding: 30px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .sobre {
@@ -132,7 +134,13 @@ main {
 .box h3 {
     font-size: 1.1rem;
     cursor: pointer;
+    text-align: center;
     color: var(--corD);
+    transition: 0.8s;
+}
+
+.box h3:hover {
+    text-decoration: underline;
 }
 
 #comunicacao,
@@ -221,6 +229,7 @@ section.redes{
 
 section.redes h2{
     margin: 18px 0;
+    font-size: 2.2rem;
     text-align: center;
     color: var(--corB);
     border: 1px solid var(--corB);
@@ -262,6 +271,15 @@ iframe#tela {
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.561);
 }
 
+footer {
+    text-align: center;
+    margin-top: 30px;
+    height: 95px;
+    background-color: var(--corB);
+    line-height: 95px;
+    box-shadow: 2px -5px 6px rgba(43, 26, 63, 0.366);    
+    color: var(--cor-light);
+}
 
 @media screen and (min-width: 992px) {
     .logo {
@@ -346,6 +364,10 @@ iframe#tela {
         margin-top: 0;
         width: 400px;
         height: 280px;
+    }
+
+    section.redes h2{
+        font-size: 3rem;
     }
 }
 
