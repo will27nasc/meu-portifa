@@ -24,10 +24,24 @@ body {
     height: 100vh;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */  
+  }
+  
+body::-webkit-scrollbar-track {
+    background: var(--cor-light);        /* color of the tracking area */ 
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: var(--corB);    /* color of the scroll thumb */
+border-radius: 20px;       /* roundness of the scroll thumb */
+border: 3px solid var(--cor-light);  /* creates padding around scroll thumb */
+}
+
 header {
     background: var(--corB) url('../img/capa.png') top center no-repeat;
     background-size: 100% 80%;
-    box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.396);
+    box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.396);    
     width: 100%;
     height: 450px;
     opacity: 0.95;
