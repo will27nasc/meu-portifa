@@ -169,7 +169,7 @@ footer {
     margin-top: 5px;
     color: var(--cor-light);
     background-color: var(--corB);
-    text-align: justify;
+    text-align: center;
     height: 85px;
     width: 100%;
     display: none;
